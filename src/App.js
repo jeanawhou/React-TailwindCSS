@@ -15,13 +15,13 @@ function App() {
 
     <React.Fragment >
     <div class=" h-full flex bg-gray-100">
-      <div class="w-40 sm:w-1/5 p-10 bg-white sidebar">
+      <div class="w-40 p-10 bg-white sidebar" style={{width: '275px'}}>
         <div className="text-4xl font-extrabold text-left my-4" style={customStyle}>
           Snazzy
         </div>
         <Sidebar title="Templates"/>
       </div>
-        <div class="flex  bg-gray-100 overflow-hidden">
+        <div class="flex bg-gray-100 overflow-hidden">
           <div class="px-6 py-4 flex-1">
             <Card 
               title="Shopify - Build an online business - Start Today" description="No.1 eCommerce Platform for All Businesses. Start, Run + Grow Your Business with Shopify®. Customize Your Store With Our Website Builder. Trusted by Over 1,000,000 Businesses. Full Blogging Platform. Social Media Integration. Drop Shipping Integration. "
