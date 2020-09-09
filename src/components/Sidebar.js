@@ -1,4 +1,3 @@
-import React, { useState, useRef } from "react";
 import Chevron from "./Chevron";
 import anchor from '../assets/images/anchor.png'
 import user from '../assets/images/user.png'
@@ -28,7 +27,7 @@ function Sidebar(props) {
         <div
           className="relative pl-4 py-4 flex text" style={{color: '#BDBDBD'}}
           >
-          <img src={anchor} width="22"/>
+          <img src={anchor} width="22" alt="Taglines"/>
           &nbsp;&nbsp;&nbsp;Taglines
         </div>
         <div
@@ -48,7 +47,7 @@ function Sidebar(props) {
 
       <hr/>
         <div className="relative pl-4 py-4 flex text" style={{color: '#BDBDBD'}}>
-          <img src={user} width="22"/>&nbsp;&nbsp;&nbsp;John Doe
+          <img src={user} width="22" alt="user"/>&nbsp;&nbsp;&nbsp;John Doe
         </div>
       <hr/>
       
