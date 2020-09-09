@@ -1,3 +1,4 @@
+import React from 'react';
 import Chevron from "./Chevron";
 import anchor from '../assets/images/anchor.png'
 import user from '../assets/images/user.png'
