@@ -15,7 +15,7 @@ function App() {
 
     <React.Fragment >
     <div class=" h-full flex bg-gray-100">
-      <div class="w-40 sm:w-64 p-4 mt-8 m-10 bg-white sidebar">
+      <div class="w-40 sm:w-1/5 p-10 bg-white sidebar">
         <div className="text-4xl font-extrabold text-left my-4" style={customStyle}>
           Snazzy
         </div>
@@ -38,14 +38,14 @@ function App() {
               
           </div>
         </div>
-        <div class="w-40 sm:w-64 mx-6 sidebar" style={{textAlign: '-webkit-center', textAlign: '-webkit-center'}}>
+        <div class="w-40 sm:w-64 mx-6 sidebar" style={{textAlign: '-webkit-center'}}>
           <SmallCard title="Company" smallDescription="Shopify" />
           <SmallCard title="Brand Keywords" smallDescription="Ecommerce" />
           <SmallCard title="Audience" smallDescription="Small Businesses..."  />
           <SmallCard title="Description" smallDescription="Small Businesses..."/>
           <button
             className="text-center font-semibold h-12 shadow rounded-lg bg-gradient-to-r text-white"
-            style={{width: '200px', backgroundImage: 'linear-gradient(to right, #56CCF2 , #2F80ED)', lineHeight: '22px', letterSpacing: '0.03em',
+            style={{width: '200px', backgroundImage: 'linear-gradient(to right, #56CCF2 , #2F80ED)', letterSpacing: '0.03em',
             fontSize: '16px',
             lineHeight: '22px',
             }}>
