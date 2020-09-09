@@ -7,8 +7,8 @@ import user from '../assets/images/user.png'
 function Sidebar(props) {
 
   return (
-    <div className="accordion__section sidebar">
-      <div className={`font-bold inline-flex py-6`}style={{color: '#828282', fontSize: 16, fontStyle: 'normal'}}>
+    <div className="accordion__section sidebar" style={{fontFamily: 'Montserrat'}}>
+      <div className={`font-bold inline-flex py-6`}style={{color: '#828282', fontSize: 16, fontStyle: 'normal', fontFamily: 'Montserrat'}}>
         {props.title}
         <Chevron style={{marginTop:'16px'}} width={8} fill={"#777"} />
       </div>
