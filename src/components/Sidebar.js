@@ -34,30 +34,30 @@ function Sidebar(props) {
           &nbsp;&nbsp;&nbsp;Taglines
         </div>
         <div
-          className="relative pl-4 py-2 pb-8 flex font-semibold"
+          className="relative pl-4 py-2 pb-4 flex font-semibold"
           style={{fontSize: '14px', lineHeight: '17px', color: '#BDBDBD', fontFamily: 'Montserrat'}}
         >
           <svg id="Layer_1" enable-background="new 0 0 512 512" height="16" viewBox="0 0 512 512" width="16" xmlns="http://www.w3.org/2000/svg"><g><path d="m410 512h-308c-25.364 0-46-20.636-46-46v-420c0-25.364 20.636-46 46-46h308c25.364 0 46 20.636 46 46v420c0 25.364-20.636 46-46 46zm-308-480c-7.72 0-14 6.28-14 14v420c0 7.72 6.28 14 14 14h308c7.72 0 14-6.28 14-14v-420c0-7.72-6.28-14-14-14z"/><path d="m368 96h-48c-8.836 0-16 7.164-16 16s7.164 16 16 16h8c0 39.701-32.299 72-72 72s-72-32.299-72-72h8c8.836 0 16-7.164 16-16s-7.164-16-16-16h-48c-8.836 0-16 7.164-16 16s7.164 16 16 16h8c0 57.346 46.654 104 104 104s104-46.654 104-104h8c8.836 0 16-7.164 16-16s-7.164-16-16-16z"/></g></svg>&nbsp;&nbsp;&nbsp;Products
         </div>
-        <hr/>
-          <div className="relative pl-4 py-4 flex font-semibold"
+        <hr style={{marginLeft: '-120px', marginRight: '-120px'}} />
+          <div className="relative pl-4 py-5 flex font-semibold"
             style={{fontSize: '14px', lineHeight: '17px', color: '#BDBDBD', fontFamily: 'Montserrat'}}
           >
             <svg height="16" viewBox="-19 -19 600 600" width="20" xmlns="http://www.w3.org/2000/svg"><path d="m251.25 12.5c0-6.90625-5.59375-12.5-12.5-12.5h-226.25c-6.90625 0-12.5 5.59375-12.5 12.5v226.25c0 6.90625 5.59375 12.5 12.5 12.5h226.25c6.90625 0 12.5-5.59375 12.5-12.5zm-25 213.75h-201.25v-201.25h201.25zm0 0"/><path d="m562.5 12.5c0-6.90625-5.59375-12.5-12.5-12.5h-226.25c-6.90625 0-12.5 5.59375-12.5 12.5v226.25c0 6.90625 5.59375 12.5 12.5 12.5h226.25c6.90625 0 12.5-5.59375 12.5-12.5zm-25 213.75h-201.25v-201.25h201.25zm0 0"/><path d="m251.25 323.75c0-6.90625-5.59375-12.5-12.5-12.5h-226.25c-6.90625 0-12.5 5.59375-12.5 12.5v226.25c0 6.90625 5.59375 12.5 12.5 12.5h226.25c6.90625 0 12.5-5.59375 12.5-12.5zm-25 212.5h-201.25v-200h201.25zm0 0"/><path d="m562.5 323.75c0-6.90625-5.59375-12.5-12.5-12.5h-226.25c-6.90625 0-12.5 5.59375-12.5 12.5v226.25c0 6.90625 5.59375 12.5 12.5 12.5h226.25c6.90625 0 12.5-5.59375 12.5-12.5zm-25 212.5h-201.25v-200h201.25zm0 0"/></svg>&nbsp;&nbsp;&nbsp;Browse
           </div>
-        <hr/>
-        <div className={`inline-flex font-bold text-gray-500 py-12`} style={{color: '#828282', fontSize: 16, fontStyle: 'normal', fontFamily: 'Montserrat'}}>
+        <hr style={{marginLeft: '-120px', marginRight: '-120px'}}/>
+        <div className={`inline-flex font-bold text-gray-500 py-10`} style={{color: '#828282', fontSize: 16, fontStyle: 'normal', fontFamily: 'Montserrat'}}>
           Saved Content
         <Chevron width={8} fill={"#777"} style={{marginTop:'16px'}} />
       </div>
 
-      <hr/>
-        <div className="relative pl-4 py-2 flex font-semibold"
+      <hr style={{marginLeft: '-120px', marginRight: '-120px'}}/>
+        <div className="relative pl-4 py-5 flex font-semibold"
           style={{fontSize: '14px', lineHeight: '17px', color: '#BDBDBD', fontFamily: 'Montserrat'}}  
         >
           <img src={user} height="16" width="16" alt="user"/>&nbsp;&nbsp;&nbsp;John Doe
         </div>
-      <hr/>
+      <hr style={{marginLeft: '-120px', marginRight: '-120px'}}/>
       
       </div>
     </div>
