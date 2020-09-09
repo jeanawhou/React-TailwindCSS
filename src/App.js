@@ -5,10 +5,6 @@ import SmallCard from './components/SmallCard';
 
 
 function App() {
-
-  const content = () => {
-    
-  }
   const customStyle = { 
     color: '#484A4F',
     letterSpacing: '-0.04em',
