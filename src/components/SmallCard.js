@@ -19,13 +19,16 @@ export default function SmallCard(props) {
       <div
         className="justify-items-center flex font-semibold bg-white pl-6 shadow-lg text-left px-4"
         v-for="i in 50"
-        style={smallCardDefaultStyle}>
+        style={smallCardDefaultStyle}
+      >
+
 				<div>
           {props.title}
           <div style={{marginTop: '5px', color: '#bdbdbd', fontSize: '10px', lineHeight: '12px', fontStyle: 'normal'}}>
             {props.smallDescription}
           </div>
         </div>
+
         <svg
           style={{marginBottom: '15px', marginRight: '6px'}}
           className="float-right"

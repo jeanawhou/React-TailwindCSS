@@ -31,7 +31,8 @@ function Sidebar(props) {
     fontSize: '16px',
     fontStyle: 'normal',
     fontFamily: 'Montserrat',
-    marginBottom: '15px'
+    marginBottom: '15px',
+    justifyContent: 'space-between'
   };
 
   const boxedStyle = {
@@ -43,9 +44,11 @@ function Sidebar(props) {
 
   return (
     <div className="accordion__section sidebar" style={{fontFamily: 'Montserrat'}}>
-      <div className={`font-bold inline-flex`} style={headingStyle}>
-        {props.title}
-        <Chevron style={{marginTop:'16px'}} width={8} fill={"#777"} />
+      <div className={`font-bold flex`} style={headingStyle}>
+        <div>
+          {props.title}
+        </div>
+        <Chevron style={{marginTop:'16px', float: 'right'}} width={8} fill={"#777"} />
       </div>
 
       <div>
@@ -72,9 +75,11 @@ function Sidebar(props) {
             <svg height="16" viewBox="-19 -19 600 600" width="20" xmlns="http://www.w3.org/2000/svg"><path d="m251.25 12.5c0-6.90625-5.59375-12.5-12.5-12.5h-226.25c-6.90625 0-12.5 5.59375-12.5 12.5v226.25c0 6.90625 5.59375 12.5 12.5 12.5h226.25c6.90625 0 12.5-5.59375 12.5-12.5zm-25 213.75h-201.25v-201.25h201.25zm0 0"/><path d="m562.5 12.5c0-6.90625-5.59375-12.5-12.5-12.5h-226.25c-6.90625 0-12.5 5.59375-12.5 12.5v226.25c0 6.90625 5.59375 12.5 12.5 12.5h226.25c6.90625 0 12.5-5.59375 12.5-12.5zm-25 213.75h-201.25v-201.25h201.25zm0 0"/><path d="m251.25 323.75c0-6.90625-5.59375-12.5-12.5-12.5h-226.25c-6.90625 0-12.5 5.59375-12.5 12.5v226.25c0 6.90625 5.59375 12.5 12.5 12.5h226.25c6.90625 0 12.5-5.59375 12.5-12.5zm-25 212.5h-201.25v-200h201.25zm0 0"/><path d="m562.5 323.75c0-6.90625-5.59375-12.5-12.5-12.5h-226.25c-6.90625 0-12.5 5.59375-12.5 12.5v226.25c0 6.90625 5.59375 12.5 12.5 12.5h226.25c6.90625 0 12.5-5.59375 12.5-12.5zm-25 212.5h-201.25v-200h201.25zm0 0"/></svg>&nbsp;&nbsp;&nbsp;&nbsp;Browse
           </div>
         <hr style={hrMargin}/>
-        <div className={`inline-flex font-bold text-gray-500 py-10`} style={{color: '#828282', fontSize: 16, fontStyle: 'normal', fontFamily: 'Montserrat'}}>
-          Saved Content
-        <Chevron width={8} fill={"#777"} style={{marginTop:'16px'}} />
+        <div className={`flex font-bold text-gray-500 py-10`} style={{...headingStyle, marginBottom: '0px'}}>
+          <div>
+            Saved Content
+          </div>
+        <Chevron width={8} fill={"#777"} style={{marginTop:'16px', float: 'right'}} />
       </div>
 
       <hr style={hrMargin}/>
