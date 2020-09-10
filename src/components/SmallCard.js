@@ -4,12 +4,12 @@ export default function SmallCard(props) {
   return (
     <React.Fragment>
       <div
-        className="justify-items-center flex font-semibold bg-white pl-6 pt-6 shadow-lg text-left mt-6 px-4"
+        className="justify-items-center flex font-semibold bg-white pl-6 shadow-lg text-left px-4"
         v-for="i in 50"
-        style={{width: '220px', height: '70px', lineHeight: '15px', fontSize:'12px', color: '#333333', borderRadius: '20px', justifyContent: 'space-between', fontFamily: 'Montserrat'}}>
+        style={{marginTop:'20px', paddingTop: '16px', width: '218px', height: '70px', lineHeight: '15px', fontSize:'12px', color: '#333333', borderRadius: '20px', justifyContent: 'space-between', fontFamily: 'Montserrat'}}>
 				<div>
           {props.title}
-          <div className="mt-1" style={{color: '#bdbdbd', fontSize: '10px', lineHeight: '12px', fontStyle: 'normal'}}>
+          <div style={{marginTop: '5px', color: '#bdbdbd', fontSize: '10px', lineHeight: '12px', fontStyle: 'normal'}}>
             {props.smallDescription}
           </div>
         </div>
