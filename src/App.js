@@ -8,7 +8,10 @@ function App() {
   const customStyle = { 
     color: '#484A4F',
     letterSpacing: '-0.04em',
-    fontSize: 32
+    fontSize: '32px',
+    paddingTop: '38px',
+    paddingBottom: '36px',
+    lineHeight: '39px'
   }
 
   return (
@@ -16,7 +19,7 @@ function App() {
     <React.Fragment >
       <div class=" h-full flex" style={{background: '#F6F8FB'}}>
         <div class="w-40 px-12 bg-white sidebar" style={{width: '275px'}}>
-          <div className="text-4xl font-extrabold text-left my-4" style={customStyle}>
+          <div className="font-extrabold text-left" style={customStyle}>
             Snazzy
           </div>
           <Sidebar title="Templates"/>
