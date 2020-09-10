@@ -1,12 +1,25 @@
 import React from 'react'
 
 export default function SmallCard(props) {
+  const smallCardDefaultStyle = {
+    marginTop:'20px',
+    paddingTop: '16px',
+    width: '218px',
+    height: '70px',
+    lineHeight: '15px',
+    fontSize:'12px',
+    color: '#333333',
+    borderRadius: '20px',
+    justifyContent: 'space-between',
+    fontFamily: 'Montserrat'
+  };
+
   return (
     <React.Fragment>
       <div
         className="justify-items-center flex font-semibold bg-white pl-6 shadow-lg text-left px-4"
         v-for="i in 50"
-        style={{marginTop:'20px', paddingTop: '16px', width: '218px', height: '70px', lineHeight: '15px', fontSize:'12px', color: '#333333', borderRadius: '20px', justifyContent: 'space-between', fontFamily: 'Montserrat'}}>
+        style={smallCardDefaultStyle}>
 				<div>
           {props.title}
           <div style={{marginTop: '5px', color: '#bdbdbd', fontSize: '10px', lineHeight: '12px', fontStyle: 'normal'}}>

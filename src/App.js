@@ -5,13 +5,14 @@ import SmallCard from './components/SmallCard';
 
 
 function App() {
-  const customStyle = { 
+  const BrandStyle = { 
     color: '#484A4F',
     letterSpacing: '-0.04em',
     fontSize: '32px',
     paddingTop: '38px',
     paddingBottom: '36px',
-    lineHeight: '39px'
+    lineHeight: '39px',
+    fontStyle: 'normal'
   }
 
   return (
@@ -19,7 +20,7 @@ function App() {
     <React.Fragment >
       <div class=" h-full flex" style={{background: '#F6F8FB'}}>
         <div class="w-40 px-12 bg-white sidebar" style={{width: '275px'}}>
-          <div className="font-extrabold text-left" style={customStyle}>
+          <div className="font-extrabold text-left" style={BrandStyle}>
             Snazzy
           </div>
           <Sidebar title="Templates"/>
