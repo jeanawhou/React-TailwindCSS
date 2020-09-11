@@ -18,13 +18,14 @@ function App() {
   return (
 
     <React.Fragment >
-      <div class=" h-full flex" style={{background: '#F6F8FB'}}>
+      <div class="h-screen flex" style={{background: '#F6F8FB'}}>
         <div class="w-40 px-12 bg-white sidebar" style={{width: '275px'}}>
           <div className="font-extrabold text-left" style={BrandStyle}>
             Snazzy
           </div>
           <Sidebar title="Templates"/>
         </div>
+
         <div class="flex overflow-hidden" >
           <div class="flex-auto" style={{paddingLeft: '51px', marginTop: '37px'}}>
             <Card 
@@ -41,19 +42,27 @@ function App() {
             />
           </div>
         </div>
+
         <div class="w-40 sm:w-64 sidebar" style={{textAlign: '-webkit-center', marginTop: '21px', marginLeft: '40px'}}>
+
           <SmallCard title="Company" smallDescription="Shopify" />
           <SmallCard title="Brand Keywords" smallDescription="Ecommerce..." />
           <SmallCard title="Audience" smallDescription="Small Businesses..."  />
           <SmallCard title="Description" smallDescription="Small Businesses..."/>
+
           <button
             className="text-center font-semibold mt-6 shadow bg-gradient-to-r text-white"
-            style={{width: '201px', backgroundImage: 'linear-gradient(to right, #56CCF2 , #2F80ED)', letterSpacing: '0.03em',
-            fontSize: '16px',
-            lineHeight: '22px',
-            height: '43px',
-            borderRadius: '6px'
-            }}>
+            style={
+              {
+                width: '201px',
+                backgroundImage: 'linear-gradient(to right, #56CCF2 , #2F80ED)',
+                letterSpacing: '0.03em',
+                fontSize: '16px',
+                lineHeight: '22px',
+                height: '43px',
+                borderRadius: '6px'
+              }
+            }>
             Create
           </button>
 
@@ -81,14 +90,15 @@ function App() {
                 <div
                   class="toggle__line w-10 h-4 rounded-full shadow-inner"
                   style={{background: '#D9F7BE'}}
-                ></div>
+                />
                 <div
                   class="toggle__dot absolute w-5 h-4 rounded-full shadow inset-y-0 right-0"
                   style={{ background: '#F0F0F3'}}
-                ></div>
+                />
               </div>
             </label>
           </div>
+
         </div>
       </div>
     </React.Fragment>

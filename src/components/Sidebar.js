@@ -48,7 +48,7 @@ function Sidebar(props) {
         <div>
           {props.title}
         </div>
-        <Chevron style={{marginTop:'16px', float: 'right'}} width={8} fill={"#777"} />
+        <Chevron style={{marginTop:'16px', float: 'right'}} width={8} fill={"#777"}  rotate={0}/>
       </div>
 
       <div>
